@@ -29,14 +29,7 @@ const items = [
     getItem('Tạo Mới', '/admin/producer/create', <PlusOutlined />),
     getItem('Hiển Thị Toàn Bộ', '/admin/producer', <MenuUnfoldOutlined />)
   ]),
-  getItem('Khách Hàng', 'sub4', <TeamOutlined />, [
-    getItem('Tạo Mới', '/admin/customer/create', <PlusOutlined />),
-    getItem('Hiển Thị Toàn Bộ', '/admin/customer', <MenuUnfoldOutlined />)
-  ]),
-  getItem('Tài Khoản', 'sub5', <UserOutlined />, [
-    getItem('Tạo Mới', '/admin/user/create', <PlusOutlined />),
-    getItem('Hiển Thị Toàn Bộ', '/admin/user', <MenuUnfoldOutlined />)
-  ]),
+  getItem('Khách Hàng', '/admin/customer', <TeamOutlined />),
 ];
 
 const SideMenu = () => {
@@ -45,17 +38,16 @@ const SideMenu = () => {
     navigate(e.key);
   };
   return (
-    <div style={{ display: 'flex', flexDirection: 'column'}}> 
-      <Title level={3} style={{ backgroundColor: "#5c85d6", color: 'white', textAlign: 'center', paddingTop: 15, margin: 0, width: '100%', height: '10vh'}}>
+    <div style={{ display: 'flex', flexDirection: 'column', width: '16vw'}}> 
+      <Title level={3} style={{ backgroundColor: "#5c85d6", color: 'white', textAlign: 'center', paddingTop: '15px', margin: 0, width: '100%', height: '10vh'}}>
         Quản Trị Hệ Thống
       </Title>
       <Menu
         theme='dark'
         onClick={onClick}
         style={{
-          width: '100%  ',
-          height: '90vh',
-          overflowY: 'scroll'
+          width: '100%',
+          height: '90vh'
         }}
         defaultOpenKeys={['sub1']}
         selectedKeys={[1]}

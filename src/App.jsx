@@ -9,13 +9,10 @@ import Product from 'admin/pages/Product/Product'
 import Producer from 'admin/pages/Producer/Producer'
 import Discount from 'admin/pages/Discount/Discount'
 import Customer from 'admin/pages/Customer/Customer'
-import User from 'admin/pages/User/User'
 import CreateCategory from 'admin/pages/Category/CreateCategory'
 import CreateProduct from 'admin/pages/Product/CreateProduct'
 import CreateProducer from 'admin/pages/Producer/CreateProducer'
 import CreateDiscount from 'admin/pages/Discount/CreateDiscount'
-import CreateCustomer from 'admin/pages/Customer/CreateCustomer'
-import CreateUser from 'admin/pages/User/CreateUser'
 import UpdateProduct from 'admin/pages/Product/UpdateProduct'
 import ViewOrder from 'admin/pages/Order/ViewOrder'
 
@@ -38,9 +35,6 @@ const App = () => {
             <Route path="/admin/discount" exact element={<Discount />} />
             <Route path="/admin/discount/create" exact element={<CreateDiscount />} />
             <Route path="/admin/customer" exact element={<Customer />} />
-            <Route path="/admin/customer/create" exact element={<CreateCustomer />} />
-            <Route path="/admin/user" exact element={<User />} />
-            <Route path="/admin/user/create" exact element={<CreateUser />} />
         </Routes>
       </Router>
     </div>
