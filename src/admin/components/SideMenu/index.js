@@ -49,7 +49,6 @@ const SideMenu = () => {
           width: '100%',
           height: '90vh'
         }}
-        defaultOpenKeys={['sub1']}
         selectedKeys={[1]}
         mode="inline"
         items={items}

@@ -303,7 +303,6 @@ const Product = () => {
           <Header style={{ width: '100%'}} />
           <Space style={{ display: 'flex', justifyContent: 'space-between'}}>
             <Typography.Title level={3} style={{ padding: '10px' }}><WalletOutlined /> Danh Sách Đơn Hàng </Typography.Title>
-            <Button type="primary"><DeleteOutlined /> Đơn đã lưu</Button>
           </Space>
           <Table
             rowSelection={{

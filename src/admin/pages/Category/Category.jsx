@@ -310,7 +310,7 @@ const Category = () => {
       <SideMenu />
         <div style={{ overflowY: 'scroll', backgroundColor: '#e6e6e6'}}>
           <Header />
-          <Typography.Title level={3} style={{ padding: '10px' }}><WalletOutlined /> Danh Sách Loại Sản Phẩm</Typography.Title>
+          <Typography.Title level={3} style={{ padding: '10px' }}><WalletOutlined /> Danh Sách Danh Mục</Typography.Title>
           <Table
             rowSelection={{
               type: rowSelection,
